@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@android:color/white"
+    android:padding="4dp"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"></android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/generateBillLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:padding="3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="2dp"
+            android:text="@string/gstin_29abvpk9166b1z3"
+            android:textSize="7sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/tax_invoice"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:text="@string/ph_41247554"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="1dp"
+            android:text="@string/copy_detail"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="1dp"
+            android:text="@string/centrex_no_7559"
+            android:textSize="6sp" />
+        <TextView
+            android:id="@+id/cashCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:paddingTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/cash_credit"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cashCredit"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="7dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/aadinath_title"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aadinath_desc_I"
+            android:textSize="6sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aadinath_desc_II"
+            android:textSize="6sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:text="@string/aadinath_address"
+            android:textSize="7sp" />
+
+        <View
+            android:id="@+id/clientTopBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/clientDetails"
+            android:background="@android:color/black"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/clientDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:paddingBottom="2dp"
+            android:textSize="8sp" />
+
+        <View
+            android:id="@+id/topBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/clientDetails"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:id="@+id/invoiceRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clientDetails">
+
+            <TextView
+                android:id="@+id/invoiceEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="@string/invoice_no"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/dateEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="@string/dated"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/invoiceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomBorder"
+            android:paddingTop="1dp">
+
+            <ListView
+                android:id="@+id/invoiceList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp"
+                android:divider="@android:color/transparent" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/itemsBorder"
+            android:paddingEnd="10dp"
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/invoiceLayout"
+            android:background="@android:color/black" />
+
+        <TableLayout
+            android:id="@+id/priceField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemsBorder"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="15dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="Total   :   "
+                    android:textAlignment="textEnd"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:id="@+id/totalView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="8sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/cgstLabel"
+                    android:layout_width="fill_parent"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="CGST @9%   :   "
+                    android:textAlignment="textEnd"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:id="@+id/cgstView"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="8sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/sgstRow">
+                <TextView
+                    android:id="@+id/sgstLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SGST   :   "
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/sgstView"
+                    android:layout_gravity="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="8sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="RoundOff   :   "
+                    android:textAlignment="textEnd"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/roundView"
+                    android:layout_gravity="end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textSize="8sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grand Total   :   "
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:id="@+id/grandView"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="8sp" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:id="@+id/bottomBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/invoiceRow"
+            android:background="@android:color/black" />
+
+        <View
+            android:id="@+id/endBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/bankDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_above="@id/bankCompleteDetail"
+                android:layout_alignParentStart="true"
+                android:text="@string/bank_details"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bankCompleteDetail"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/disclaimer"
+                android:layout_alignParentStart="true"
+                android:lines="4"
+                android:minLines="4"
+                android:text="@string/bankFullDetails"
+                android:textSize="6sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/disclaimer"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:text="For Aadinath Tools and Abrasives"
+                android:textSize="6sp" />
+
+            <TextView
+                android:id="@+id/disclaimer"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/disclaimer"
+                android:textSize="6sp"
+                android:textStyle="italic|bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

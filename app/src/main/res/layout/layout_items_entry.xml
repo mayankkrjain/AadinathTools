@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/cell_shape"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/s_no"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:paddingLeft="4dp"
+            android:paddingBottom="3dp"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="false"
+            android:text="@string/goods_desc"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/hsn"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:paddingBottom="3dp"
+            android:textAlignment="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="@string/hsn"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:paddingBottom="3dp"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/quantity"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/units"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingBottom="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textAlignment="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="@string/pcs"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_weight="1.8"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/cell_shape"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="@string/rate"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingBottom="3dp"
+            android:layout_weight="2.8"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:paddingRight="3dp"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:text="@string/amount"
+            android:textSize="8sp" />
+    </TableRow>
+</TableLayout>
